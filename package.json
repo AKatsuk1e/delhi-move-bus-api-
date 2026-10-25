@@ -1,0 +1,17 @@
+{
+  "name": "delhi-move-bus-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone server-side proxy for Delhi OTD GTFS-Realtime vehicle positions.",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "protobufjs": "^7.5.4"
+  }
+}
