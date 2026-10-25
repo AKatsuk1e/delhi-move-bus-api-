@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: delhi-move-bus-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: OTD_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGIN
+        value: https://delhi-move--rahul.tiniestcloud.app
